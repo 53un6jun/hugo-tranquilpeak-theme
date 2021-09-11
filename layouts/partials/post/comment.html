@@ -1,6 +1,6 @@
-{{ if .IsPage }}
-  {{ if and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable)) }}
-    <div id="disqus_thread">
+<!-- {{ if .IsPage }} -->
+  <!-- {{ if and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable)) }} -->
+    <!-- <div id="disqus_thread">
       <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
     </div>
     <script type="text/javascript">
@@ -46,6 +46,16 @@
           ...{{ .Site.Params.comment.gitalk.options | jsonify | safeJS }}
         }).render('gitalk')
       })()
-    </script>
-  {{ end }}
-{{ end }}
+    </script> -->
+
+  <!-- {{ end }} -->
+<!-- {{ end }} -->
+
+<script src="https://utteranc.es/client.js"
+        repo="53un6jun/blog_comments"
+        issue-term="pathname"
+        label="comment"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>

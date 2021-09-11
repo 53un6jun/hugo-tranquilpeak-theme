@@ -50,7 +50,7 @@
               data-message-zero="{{ i18n "global.categories_found.zero" }}"
               data-message-one="{{ i18n "global.categories_found.one" }}"
               data-message-other="{{ i18n "global.categories_found.other" }}"></h5>
-          <section class="boxes">
+          <!-- <section class="boxes">
             {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
                 {{ $path := .path }}
@@ -71,7 +71,7 @@
                 </div>
               {{ end }}
             {{ end }}
-          </section>
+          </section> -->
           <section class="boxes">
             {{ if $.Site.Params.hierarchicalCategories }}
               {{ range $.Scratch.GetSortedMapValues "categories-level-0" }}
