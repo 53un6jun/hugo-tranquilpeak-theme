@@ -119,7 +119,7 @@ canonifyurls = true
   # -----------
   # Description
   # -----------
-  description = "Hugo tranquilpeak theme demo"
+  description = "남들 다 만들길래 저도 만들어봤습니다."
 
   # ------------------
   # Syntax highlighter
