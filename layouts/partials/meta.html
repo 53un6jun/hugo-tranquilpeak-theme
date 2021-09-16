@@ -6,6 +6,7 @@
 <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ end }}{{ if .Site.Params.keywords }}, {{ delimit .Site.Params.keywords ", " }}{{ end }}">
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
+
 <!-- Meta Social -->
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
@@ -80,3 +81,6 @@
   <meta property="og:image" content="{{ . | absURL }}">
   <meta property="twitter:image" content="{{ . | absURL }}">
 {{ end }}
+
+<meta name="google-site-verification" content="zf-FWTtfpuNIzcTZYWH92XGsxY9O3xjQtYnsuO17Abw">
+<meta name="naver-site-verification" content="fb799b19908002c5817d2b94a11fef59568083a2">
